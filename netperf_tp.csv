@@ -1,0 +1,15 @@
+LD_PRELOAD=/usr/lib/rsocket/librspreload.so netperf -t TCP_STREAM -f g -H 192.168.10.141 -T 2 -l 10 -- -m $msg_size
+msg_size (bytes), throughput (Mbps)
+256, 6.76
+512, 12.67
+1024, 21.71
+2048, 36.26
+4096, 38.79
+8192, 39.15
+16384, 39.28
+32768, 39.38
+65536, 39.38
+131072, 25.48
+262144, 25.38
+524288, 25.83
+1048576, 25.81

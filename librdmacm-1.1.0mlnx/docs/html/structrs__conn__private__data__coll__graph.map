@@ -1,0 +1,5 @@
+<map id="rs_conn_private_data" name="rs_conn_private_data">
+<area shape="rect" id="node2" href="$structib__connect__hdr.html" title="ib_connect_hdr" alt="" coords="5,109,116,136"/>
+<area shape="rect" id="node3" href="$structrs__conn__data.html" title="rs_conn_data" alt="" coords="140,109,240,136"/>
+<area shape="rect" id="node4" href="$structrs__sge.html" title="rs_sge" alt="" coords="159,5,221,32"/>
+</map>

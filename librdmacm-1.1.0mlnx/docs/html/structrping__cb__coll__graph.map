@@ -1,0 +1,11 @@
+<map id="rping_cb" name="rping_cb">
+<area shape="rect" id="node2" href="$structrdma__event__channel.html" title="rdma_event_channel" alt="" coords="31,184,173,211"/>
+<area shape="rect" id="node4" href="$structrdma__cm__id.html" title="rdma_cm_id" alt="" coords="266,273,359,300"/>
+<area shape="rect" id="node3" href="$structrping__rdma__info.html" title="rping_rdma_info" alt="" coords="97,273,211,300"/>
+<area shape="rect" id="node8" href="$structrdma__cm__event.html" title="rdma_cm_event" alt="" coords="387,377,502,404"/>
+<area shape="rect" id="node5" href="$structrdma__route.html" title="rdma_route" alt="" coords="269,184,356,211"/>
+<area shape="rect" id="node6" href="$structrdma__addr.html" title="rdma_addr" alt="" coords="271,95,354,121"/>
+<area shape="rect" id="node7" href="$structrdma__ib__addr.html" title="rdma_ib_addr" alt="" coords="263,5,363,32"/>
+<area shape="rect" id="node9" href="$structrdma__conn__param.html" title="rdma_conn_param" alt="" coords="415,273,544,300"/>
+<area shape="rect" id="node10" href="$structrdma__ud__param.html" title="rdma_ud_param" alt="" coords="569,273,683,300"/>
+</map>

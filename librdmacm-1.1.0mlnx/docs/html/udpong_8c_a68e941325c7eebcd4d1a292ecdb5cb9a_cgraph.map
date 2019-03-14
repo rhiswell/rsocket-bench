@@ -1,0 +1,8 @@
+<map id="svr_run" name="svr_run">
+<area shape="rect" id="node2" href="$udpong_8c.html#afa8beca3bdebbe2d014a003de93f8aed" title="svr_bind" alt="" coords="130,5,201,32"/>
+<area shape="rect" id="node4" href="$udpong_8c.html#a927fca003c76105986267f6289fa63d3" title="svr_recv" alt="" coords="269,56,341,83"/>
+<area shape="rect" id="node6" href="$udpong_8c.html#ac60277aaedb3c10d1535aab1fd055077" title="svr_process" alt="" coords="119,107,212,133"/>
+<area shape="rect" id="node3" href="$udpong_8c.html#a36155140b701ba04e73f2ac147f9b1a5" title="set_options" alt="" coords="260,5,349,32"/>
+<area shape="rect" id="node5" href="$common_8c.html#acf74dcae3b8d03705964eb25d1ff2021" title="do_poll" alt="" coords="397,81,460,108"/>
+<area shape="rect" id="node7" href="$udpong_8c.html#a33140c0dedf7e886409535430e11fdea" title="svr_send" alt="" coords="267,107,342,133"/>
+</map>

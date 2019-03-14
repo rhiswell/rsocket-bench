@@ -1,0 +1,5 @@
+<map id="server_connect" name="server_connect">
+<area shape="rect" id="node2" href="$rstream_8c.html#a36155140b701ba04e73f2ac147f9b1a5" title="set_options" alt="" coords="164,5,253,32"/>
+<area shape="rect" id="node4" href="$common_8c.html#acf74dcae3b8d03705964eb25d1ff2021" title="do_poll" alt="" coords="177,56,240,83"/>
+<area shape="rect" id="node3" href="$rstream_8c.html#a222bf2d8e9409d3ca5598dd66f0968cb" title="set_keepalive" alt="" coords="301,5,404,32"/>
+</map>

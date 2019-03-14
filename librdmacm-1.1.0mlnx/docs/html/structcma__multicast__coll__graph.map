@@ -1,0 +1,13 @@
+<map id="cma_multicast" name="cma_multicast">
+<area shape="rect" id="node2" href="$structcma__id__private.html" title="cma_id_private" alt="" coords="126,377,237,404"/>
+<area shape="rect" id="node3" href="$structcma__device.html" title="cma_device" alt="" coords="190,273,282,300"/>
+<area shape="rect" id="node4" href="$structcma__port.html" title="cma_port" alt="" coords="198,184,274,211"/>
+<area shape="rect" id="node5" href="$structrdma__cm__id.html" title="rdma_cm_id" alt="" coords="307,273,400,300"/>
+<area shape="rect" id="node10" href="$structrdma__cm__event.html" title="rdma_cm_event" alt="" coords="412,377,527,404"/>
+<area shape="rect" id="node6" href="$structrdma__route.html" title="rdma_route" alt="" coords="303,184,390,211"/>
+<area shape="rect" id="node7" href="$structrdma__addr.html" title="rdma_addr" alt="" coords="305,95,388,121"/>
+<area shape="rect" id="node8" href="$structrdma__ib__addr.html" title="rdma_ib_addr" alt="" coords="297,5,397,32"/>
+<area shape="rect" id="node9" href="$structrdma__event__channel.html" title="rdma_event_channel" alt="" coords="414,184,557,211"/>
+<area shape="rect" id="node11" href="$structrdma__conn__param.html" title="rdma_conn_param" alt="" coords="439,273,569,300"/>
+<area shape="rect" id="node12" href="$structrdma__ud__param.html" title="rdma_ud_param" alt="" coords="593,273,708,300"/>
+</map>

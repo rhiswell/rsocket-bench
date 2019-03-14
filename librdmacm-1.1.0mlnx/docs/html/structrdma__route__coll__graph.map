@@ -1,0 +1,4 @@
+<map id="rdma_route" name="rdma_route">
+<area shape="rect" id="node2" href="$structrdma__addr.html" title="rdma_addr" alt="" coords="14,95,97,121"/>
+<area shape="rect" id="node3" href="$structrdma__ib__addr.html" title="rdma_ib_addr" alt="" coords="5,5,105,32"/>
+</map>

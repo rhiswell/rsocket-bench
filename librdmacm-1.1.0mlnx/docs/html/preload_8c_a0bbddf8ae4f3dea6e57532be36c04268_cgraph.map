@@ -1,0 +1,51 @@
+<map id="dup2" name="dup2">
+<area shape="rect" id="node2" href="$preload_8c.html#a59b00d3202e1bc5acc0c8988796f0cf5" title="init_preload" alt="" coords="646,58,734,84"/>
+<area shape="rect" id="node6" href="$indexer_8h.html#af45d192d115bd751fe2925be50c7ac0a" title="idm_lookup" alt="" coords="646,1223,734,1250"/>
+<area shape="rect" id="node8" href="$preload_8c.html#aaa72ea48606b4beb7b981f0cfe80da96" title="fork_passive" alt="" coords="104,919,200,946"/>
+<area shape="rect" id="node11" href="$cma_8h.html#a8b303ad80233db2813e5aa010d64bcb1" title="ERR" alt="" coords="994,514,1045,540"/>
+<area shape="rect" id="node20" href="$indexer_8c.html#ad68dc5ed5d7f43544ce3b1eae0927d58" title="idm_set" alt="" coords="656,564,724,591"/>
+<area shape="rect" id="node49" href="$preload_8c.html#a31d89b2ae3f2a673e49626992f3b7119" title="fork_active" alt="" coords="109,1046,195,1072"/>
+<area shape="rect" id="node3" href="$preload_8c.html#a0f60f2993a5072b4a43d6eda7de1e45a" title="getenv_options" alt="" coords="809,108,920,135"/>
+<area shape="rect" id="node4" href="$preload_8c.html#afa53a94499ed887b242d9a8176062464" title="scan_config" alt="" coords="819,58,911,84"/>
+<area shape="rect" id="node5" href="$preload_8c.html#a9328ac30d509a60dc59b5b7645fc7f00" title="free_config" alt="" coords="976,58,1063,84"/>
+<area shape="rect" id="node7" href="$indexer_8h.html#a977d8ecd8d7dae6f627b64c112d5acda" title="idm_at" alt="" coords="834,1248,895,1275"/>
+<area shape="rect" id="node9" href="$preload_8c.html#a4750f7b8eb6337aa61017da0ca956b14" title="fd_getd" alt="" coords="285,1122,350,1148"/>
+<area shape="rect" id="node10" href="$rsocket_8h.html#a267569f689c00f386eacb636ae80f88c" title="rsocket" alt="" coords="285,1020,350,1047"/>
+<area shape="rect" id="node23" href="$rsocket_8h.html#ac2fa982b6d3b37d13aed61944eef25b1" title="Set the socket options. " alt="" coords="461,868,552,895"/>
+<area shape="rect" id="node28" href="$rsocket_8h.html#a7faa7ecf9cbda774dcd23edcfe64d110" title="rbind" alt="" coords="481,159,532,186"/>
+<area shape="rect" id="node32" href="$rsocket_8h.html#a6141dc5ea5ad1cb32559770d3fd31f15" title="rlisten" alt="" coords="478,210,535,236"/>
+<area shape="rect" id="node34" href="$rsocket_8h.html#ac9018b560911eabbca843860053d6200" title="raccept" alt="" coords="285,590,350,616"/>
+<area shape="rect" id="node43" href="$preload_8c.html#a00fc571f32fc34b4289e973db21147bf" title="set_rsocket_options" alt="" coords="248,919,387,946"/>
+<area shape="rect" id="node44" href="$preload_8c.html#a9419f594af2350ad8a7753515a3b16fe" title="copysockopts" alt="" coords="266,970,369,996"/>
+<area shape="rect" id="node45" href="$preload_8c.html#a7a0a52916cd14193b8cafc07e1751d11" title="fd_store" alt="" coords="283,1223,352,1250"/>
+<area shape="rect" id="node46" href="$rsocket_8h.html#a9512003e01bf516c772a8d21291ffbe1" title="rclose" alt="" coords="289,1071,346,1098"/>
+<area shape="rect" id="node13" href="$rsocket_8c.html#aac5d18a2e01b9bd994aadff66a3ac451" title="rs_configure" alt="" coords="460,818,553,844"/>
+<area shape="rect" id="node16" href="$rsocket_8c.html#a69988b92d82eec9cd61ada1aef419ef8" title="rs_alloc" alt="" coords="473,767,540,794"/>
+<area shape="rect" id="node17" href="$rdma__cma_8h.html#a181f250a02de430e08f97931d1c9dbbf" title="rdma_create_id" alt="" coords="451,1020,562,1047"/>
+<area shape="rect" id="node18" href="$rsocket_8c.html#ac6a3651e31fba1ed721c509bfcbe8d93" title="ds_init" alt="" coords="477,970,537,996"/>
+<area shape="rect" id="node19" href="$rsocket_8c.html#a92d3c282cfedb014924dff0802fa721c" title="rs_insert" alt="" coords="471,615,543,642"/>
+<area shape="rect" id="node22" href="$rsocket_8c.html#ae394ab43425b552cc266c30c34963236" title="rs_free" alt="" coords="475,1071,538,1098"/>
+<area shape="rect" id="node12" href="$cma_8h.html#af5a0032954a15fdf6ab6595830851114" title="ucma_init" alt="" coords="1111,514,1189,540"/>
+<area shape="rect" id="node14" href="$rsocket_8c.html#a1759d6a96c9e26b5d902994ca450587a" title="rs_value_to_scale" alt="" coords="627,666,753,692"/>
+<area shape="rect" id="node15" href="$rsocket_8c.html#aa34c6b2055b76a2bd8653cc64f9369a0" title="rs_scale_to_value" alt="" coords="627,716,753,743"/>
+<area shape="rect" id="node21" href="$indexer_8c.html#a0b18cb55e2215496974d7f7a7708a755" title="idm_grow" alt="" coords="825,564,904,591"/>
+<area shape="rect" id="node24" href="$preload_8c.html#a0905d58a6f3434afdb9e2212e7255e16" title="setsockopt" alt="" coords="647,868,733,895"/>
+<area shape="rect" id="node25" href="$rdma__cma_8h.html#a6554740bb40bbf90ffc78c6335594d56" title="rdma_set_option" alt="" coords="805,716,924,743"/>
+<area shape="rect" id="node26" href="$rsocket_8c.html#aa2d950f3d99d08bb9e7397a9600e6bf3" title="rs_set_keepalive" alt="" coords="630,1020,750,1047"/>
+<area shape="rect" id="node27" href="$rsocket_8c.html#ae9663f26405e6ad953b3055b5ebcc484" title="rs_notify_svc" alt="" coords="815,1020,915,1047"/>
+<area shape="rect" id="node29" href="$rdma__cma_8h.html#ab9c04659ba09f1f578b8821f2cca9249" title="rdma_bind_addr" alt="" coords="807,159,922,186"/>
+<area shape="rect" id="node30" href="$rsocket_8c.html#adadad643f14fd1311d2a9b475476c082" title="ds_init_ep" alt="" coords="649,919,731,946"/>
+<area shape="rect" id="node31" href="$preload_8c.html#ac445858ac7e0ee1bad7aadd9ea08e8d0" title="bind" alt="" coords="667,108,713,135"/>
+<area shape="rect" id="node33" href="$rdma__cma_8h.html#a7c144cde04c55ae9d43301cf92626574" title="rdma_listen" alt="" coords="820,260,909,287"/>
+<area shape="rect" id="node35" href="$rdma__cma_8h.html#a55266816018a83050fefde68d9dd5056" title="rdma_get_request" alt="" coords="801,463,928,490"/>
+<area shape="rect" id="node36" href="$rsocket_8c.html#a6ca8b145c073f567cdc5729caacfc45d" title="rs_conn_data_offset" alt="" coords="437,463,577,490"/>
+<area shape="rect" id="node37" href="$preload_8c.html#ab164b28cfd55e2d45c91a530f4a96f7f" title="fcntl" alt="" coords="483,108,530,135"/>
+<area shape="rect" id="node38" href="$rsocket_8c.html#ae7ac90daf530ad5abdf4fc56f17b4d5d" title="rs_create_ep" alt="" coords="816,514,913,540"/>
+<area shape="rect" id="node39" href="$rsocket_8c.html#adfdedf19959d984920ef63de0724763a" title="rs_save_conn_data" alt="" coords="439,716,574,743"/>
+<area shape="rect" id="node40" href="$rsocket_8c.html#a51fb20b3026d451325c2f3ac0ea92dd7" title="rs_format_conn_data" alt="" coords="435,564,579,591"/>
+<area shape="rect" id="node41" href="$rdma__cma_8h.html#a3f04fa9614a61c9ccf74f766b5ce40e0" title="rdma_accept" alt="" coords="641,362,739,388"/>
+<area shape="rect" id="node42" href="$rsocket_8c.html#a9092722a853fed08189c1c4123836a0a" title="rgetpeername" alt="" coords="456,666,557,692"/>
+<area shape="rect" id="node47" href="$rsocket_8c.html#af832c10085c54486c799ad9f5b2458a2" title="Shut down part of a full&#45;duplex connection. " alt="" coords="465,1426,548,1452"/>
+<area shape="rect" id="node48" href="$rsocket_8c.html#abc1bce18d96e62edba6ab9794ae26317" title="ds_shutdown" alt="" coords="641,1096,739,1123"/>
+<area shape="rect" id="node50" href="$rsocket_8h.html#acdc48b4559bf88d04384b49f1205d3c5" title="rconnect" alt="" coords="471,1324,543,1351"/>
+</map>

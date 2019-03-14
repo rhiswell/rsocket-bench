@@ -1,0 +1,5 @@
+<map id="acm_resolve_msg" name="acm_resolve_msg">
+<area shape="rect" id="node2" href="$structacm__ep__addr__data.html" title="acm_ep_addr_data" alt="" coords="5,95,137,121"/>
+<area shape="rect" id="node3" href="$unionacm__ep__info.html" title="acm_ep_info" alt="" coords="23,5,119,32"/>
+<area shape="rect" id="node4" href="$structacm__hdr.html" title="acm_hdr" alt="" coords="162,95,234,121"/>
+</map>

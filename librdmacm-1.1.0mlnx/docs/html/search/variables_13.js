@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['ucma_5fidm',['ucma_idm',['../cma_8c.html#abac78bbc157ea75b94b265c7998ef82d',1,'cma.c']]],
+  ['ud',['ud',['../structrdma__cm__event.html#abb4cb59759664946801366a0854187cd',1,'rdma_cm_event::ud()'],['../structucma__abi__event__resp.html#ac76e4a43179f4e46f0f3f19284ff8558',1,'ucma_abi_event_resp::ud()']]],
+  ['udp_5fsock',['udp_sock',['../structrsocket.html#a9eab4b24b7c352c536a574844038dd1a',1,'rsocket']]],
+  ['udp_5fsvc',['udp_svc',['../rsocket_8c.html#ac73c2b267623d07ba7e7b63b5eb81443',1,'rsocket.c']]],
+  ['udp_5fsvc_5ffds',['udp_svc_fds',['../rsocket_8c.html#a510d2a84b89c80962826aa3365117cfb',1,'rsocket.c']]],
+  ['uib_5faddr16',['uib_addr16',['../structib__addr.html#a6bcb2e4e59581a79c0be9be8a1ecdad0',1,'ib_addr']]],
+  ['uib_5faddr32',['uib_addr32',['../structib__addr.html#a0afdc76de68786446e60663a62c7b627',1,'ib_addr']]],
+  ['uib_5faddr64',['uib_addr64',['../structib__addr.html#a5c28419cef47572ea0c9dad972a096b5',1,'ib_addr']]],
+  ['uib_5faddr8',['uib_addr8',['../structib__addr.html#acb5474715907200e3759a8806eea0c86',1,'ib_addr']]],
+  ['uid',['uid',['../structucma__abi__create__id.html#a4627e73fa8911bcf21020174baf6558f',1,'ucma_abi_create_id::uid()'],['../structucma__abi__accept.html#a1276e0e41533b997aeba16a22b0a22ce',1,'ucma_abi_accept::uid()'],['../structucma__abi__join__ip__mcast.html#a9e43327b10dde6a2391c18109718e4da',1,'ucma_abi_join_ip_mcast::uid()'],['../structucma__abi__join__mcast.html#af5dcce5465e388f4c7a2190bf418edd3',1,'ucma_abi_join_mcast::uid()'],['../structucma__abi__event__resp.html#ac4f18da70f18770a45b03decfd9e5e18',1,'ucma_abi_event_resp::uid()']]],
+  ['unack_5fcqe',['unack_cqe',['../structrsocket.html#ae7b1afac4b869b2bd6cb33a5d2cc2d12',1,'rsocket']]],
+  ['unmapped_5faddr',['unmapped_addr',['../mckey_8c.html#a9298133634a4228ce47639dbb9b3400d',1,'mckey.c']]],
+  ['use_5fasync',['use_async',['../riostream_8c.html#a0e9196e140d1096d301f320d049c12ee',1,'use_async():&#160;riostream.c'],['../rstream_8c.html#a0e9196e140d1096d301f320d049c12ee',1,'use_async():&#160;rstream.c'],['../udpong_8c.html#a0e9196e140d1096d301f320d049c12ee',1,'use_async():&#160;udpong.c']]],
+  ['use_5ffork',['use_fork',['../rstream_8c.html#a252a7ff7b29b9c60c9c6ec6111fca2f6',1,'rstream.c']]],
+  ['use_5frgai',['use_rgai',['../riostream_8c.html#ad0a47e812fd242096bf8792417621398',1,'use_rgai():&#160;riostream.c'],['../rstream_8c.html#ad0a47e812fd242096bf8792417621398',1,'use_rgai():&#160;rstream.c']]],
+  ['use_5frs',['use_rs',['../common_8c.html#a2fb170a148b8dd8e9d4cb2cb0f2c534d',1,'use_rs():&#160;common.c'],['../common_8h.html#a2fb170a148b8dd8e9d4cb2cb0f2c534d',1,'use_rs():&#160;common.c']]]
+];

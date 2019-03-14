@@ -1,0 +1,23 @@
+<map id="ds_rmsg" name="ds_rmsg">
+<area shape="rect" id="node5" href="$structrsocket.html" title="rsocket" alt="" coords="514,441,579,468"/>
+<area shape="rect" id="node2" href="$structds__qp.html" title="ds_qp" alt="" coords="637,531,694,557"/>
+<area shape="rect" id="node3" href="$structds__dest.html" title="ds_dest" alt="" coords="626,620,694,647"/>
+<area shape="rect" id="node4" href="$unionsocket__addr.html" title="socket_addr" alt="" coords="719,531,812,557"/>
+<area shape="rect" id="node6" href="$structrs__iomap.html" title="rs_iomap" alt="" coords="108,285,183,311"/>
+<area shape="rect" id="node7" href="$structrs__sge.html" title="rs_sge" alt="" coords="168,185,229,212"/>
+<area shape="rect" id="node8" href="$structrs__msg.html" title="rs_msg" alt="" coords="338,285,403,311"/>
+<area shape="rect" id="node9" href="$structfastlock__t.html" title="fastlock_t" alt="" coords="427,285,506,311"/>
+<area shape="rect" id="node10" href="$structrs__iomap__mr.html" title="rs_iomap_mr" alt="" coords="530,285,627,311"/>
+<area shape="rect" id="node11" href="$struct__dlist__entry.html" title="_dlist_entry" alt="" coords="631,185,721,212"/>
+<area shape="rect" id="node12" href="$structatomic__t.html" title="atomic_t" alt="" coords="519,185,591,212"/>
+<area shape="rect" id="node13" href="$structds__smsg.html" title="ds_smsg" alt="" coords="781,285,856,311"/>
+<area shape="rect" id="node14" href="$structrdma__cm__id.html" title="rdma_cm_id" alt="" coords="1004,285,1097,311"/>
+<area shape="rect" id="node19" href="$structrdma__cm__event.html" title="rdma_cm_event" alt="" coords="1188,441,1303,468"/>
+<area shape="rect" id="node15" href="$structrdma__route.html" title="rdma_route" alt="" coords="930,185,1017,212"/>
+<area shape="rect" id="node16" href="$structrdma__addr.html" title="rdma_addr" alt="" coords="932,95,1015,121"/>
+<area shape="rect" id="node17" href="$structrdma__ib__addr.html" title="rdma_ib_addr" alt="" coords="923,5,1023,32"/>
+<area shape="rect" id="node18" href="$structrdma__event__channel.html" title="rdma_event_channel" alt="" coords="1041,185,1183,212"/>
+<area shape="rect" id="node20" href="$structrdma__conn__param.html" title="rdma_conn_param" alt="" coords="1179,285,1309,311"/>
+<area shape="rect" id="node21" href="$structrdma__ud__param.html" title="rdma_ud_param" alt="" coords="1333,285,1448,311"/>
+<area shape="rect" id="node22" href="$structds__header.html" title="ds_header" alt="" coords="1081,441,1164,468"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="client_run" name="client_run">
+<area shape="rect" id="node2" href="$udpong_8c.html#ad70a57520b21fff19afa19f0d95bb729" title="client_connect" alt="" coords="146,56,253,83"/>
+<area shape="rect" id="node8" href="$udpong_8c.html#a43666ef227425e7e722b02b3b7e3f9d9" title="init_latency_test" alt="" coords="141,208,258,235"/>
+<area shape="rect" id="node11" href="$udpong_8c.html#a8b5206729bdd9aeeabfbf3daa0ca59d0" title="run_test" alt="" coords="165,132,234,159"/>
+<area shape="rect" id="node14" href="$udpong_8c.html#a57f9091da79a586091d681a8b5948f60" title="init_bandwidth_test" alt="" coords="132,259,267,285"/>
+<area shape="rect" id="node3" href="$udpong_8c.html#a36155140b701ba04e73f2ac147f9b1a5" title="set_options" alt="" coords="330,5,419,32"/>
+<area shape="rect" id="node4" href="$udpong_8c.html#ab259139d150311a565bbcf50cf22bf0e" title="client_send_recv" alt="" coords="315,56,435,83"/>
+<area shape="rect" id="node5" href="$udpong_8c.html#a7a896e2762f402428d0d235dacdaeea0" title="client_send" alt="" coords="483,107,571,133"/>
+<area shape="rect" id="node7" href="$udpong_8c.html#ab8575a090a10084cf55b0fa71fe06ff7" title="client_recv" alt="" coords="484,56,569,83"/>
+<area shape="rect" id="node6" href="$common_8c.html#acf74dcae3b8d03705964eb25d1ff2021" title="do_poll" alt="" coords="619,107,681,133"/>
+<area shape="rect" id="node9" href="$common_8c.html#a32647e0f4589962b8d132568468ecbe7" title="size_str" alt="" coords="493,208,561,235"/>
+<area shape="rect" id="node10" href="$common_8c.html#a123d1f757cb25d149cf1b311617747f7" title="size_to_count" alt="" coords="323,259,426,285"/>
+<area shape="rect" id="node12" href="$udpong_8c.html#ad7523c99420691727fbf7f80e3efd6a6" title="show_perf" alt="" coords="333,157,416,184"/>
+<area shape="rect" id="node13" href="$common_8c.html#a5112953b02fc26c872e5d5c2cea17a4b" title="cnt_str" alt="" coords="495,157,558,184"/>
+</map>

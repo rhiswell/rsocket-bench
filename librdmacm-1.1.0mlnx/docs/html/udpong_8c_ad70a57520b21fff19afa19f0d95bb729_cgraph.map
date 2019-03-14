@@ -1,0 +1,7 @@
+<map id="client_connect" name="client_connect">
+<area shape="rect" id="node2" href="$udpong_8c.html#a36155140b701ba04e73f2ac147f9b1a5" title="set_options" alt="" coords="175,5,265,32"/>
+<area shape="rect" id="node3" href="$udpong_8c.html#ab259139d150311a565bbcf50cf22bf0e" title="client_send_recv" alt="" coords="160,56,280,83"/>
+<area shape="rect" id="node4" href="$udpong_8c.html#a7a896e2762f402428d0d235dacdaeea0" title="client_send" alt="" coords="328,31,416,57"/>
+<area shape="rect" id="node6" href="$udpong_8c.html#ab8575a090a10084cf55b0fa71fe06ff7" title="client_recv" alt="" coords="329,81,415,108"/>
+<area shape="rect" id="node5" href="$common_8c.html#acf74dcae3b8d03705964eb25d1ff2021" title="do_poll" alt="" coords="464,31,527,57"/>
+</map>

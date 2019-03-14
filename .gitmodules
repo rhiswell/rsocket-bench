@@ -1,3 +1,6 @@
 [submodule "FlameGraph"]
 	path = FlameGraph
 	url = https://github.com/brendangregg/FlameGraph.git
+[submodule "netperf"]
+	path = netperf
+	url = git@github.com:rhiswell/netperf.git

@@ -1,5 +1,9 @@
 ## Understanding Rsocket
 
+[TOC]
+
+## Overview
+
 文章从以下几个方面深入理解 rsocket 转换库，首先是 rsockets 协议和实现概揽，然后是 rsocket 内部实现细节和 API 兼容性分析，最后通过一些 benchmarks 给出 rsocket 的性能问题并尝试改进。
 
 ## Rsocket protocol and design guide
@@ -207,7 +211,7 @@ Addr - Associated source IP address
 - Rsocket protocol and design guide. https://github.com/linux-rdma/rdma-core/blob/master/librdmacm/docs/rsocket.
 - Basic flow control for RDMA transfers. https://thegeekinthecorner.wordpress.com/2012/12/19/basic-flow-control-for-rdma-transfers/.
 
-##Implementation details
+## Implementation details
 
 **Rsocket 中类 socket 的结构体是 rsocket，其维护了所有的资源。另外，rsocket 使用 rdma_cm 进行连接管理，使用 ibverbs 进行数据传输。**当用户通过 rsocket 创建一个 rsocket 实例时，首先通过 rdma_cm 创建一个 rdma_cm_id 并存储在 cm_id 中，然后创建并维护收发缓冲区。rdma_cm 实现了类 socket 语义的连接建立和管理过程，其中 rdma_cm_id 想当于一个 socket，其结构如下，
 
@@ -285,7 +289,7 @@ ibverbs 中 CQ event 是如何实现的呢？因为 event 是 CPU 被动接受�
 
 HCA 支持多种产生中断的方法——asserting a pin on its physical interface, emulating interrupt ping assertion on the host link (PCI) or generating Message Signaled Interrupts (MSI/MSI-X)，使软件能够将中断复用到主机上不同的 consumers。每个 EQ 都可以配置为在 EQE 发布到该 EQ 时产生中断。多个 EQs 可以映射到同一个中断向量（MSI-X)，从而在 EQ 和 interrupts 之间保持了多对一的关系。WQs、CQs、EQs 和 MSI-X vectors 之间的关系如图，
 
-![img](file:///home/rh/Workspace/ser140/workspace/rsocket-bench/assets/1552286116702.png?lastModify=1552286113)
+![img](./assets/1552286116702.png?lastModify=1552286113)
 
 rsocket 提供的编程接口包括，
 
@@ -362,8 +366,10 @@ send/recv 过程中，rsocket 首先将用户拷贝到 sbuf 中，再通过 RDMA
 
 1. **无法支持大量的并发连接，**因为 rsocket 为每一条 TCP 都分配了一个 QP，而 QP 的数量依赖于硬件；
 2. **拷贝开销很大，**因为 send/recv 过程中，rsocket 首先将用户数据拷贝到 sbuf 中，再通过 RDMA write 将数据传输到接受者的 rbuf 中，最后接受者将数据拷贝到用户缓冲区。整个过程有两次拷贝，如果 payload 很大，则拷贝开销很大；
-3. **有锁开销**，主要是两个，第一个是当 msg_size 很小时 rsend 内部中 fastlock_release 很大（原因不明），第二个是当 msg_size 很大时，rs_process_cq 中 fastlock 开销明显，主要源自 send/recv 共享 CQ；
+3. **有锁开销**，主要是两个，第一个是当 msg_size 很小时 rsend 内部中 fastlock_release 很大（原因不明），第二个是当 msg_size 很大时，rs_process_cq 中 fastlock 开销明显，因为 send/recv 共享一个 CQ，存在锁竞争；
 4. **事件同步开销，**当得传输的数据大于 64KB 时，发送端会阻塞在 rs_get_cq_event 以等待接受端更新缓冲区信息，该过程导致大量的上下文切换，以致 rsocket 吞吐下降严重。有大量的上下文切换是因为 CQ event 需要 rdma 内核模块和驱动的支持。
+
+针对以上问题，有一些问题值得探讨。如何实现 socket 的 zero copy 呢？如何有效共享 QP 从而支持大量的 TCP 并发？可以做到无锁开销？如何减少事件的同步开销？如何实现 epoll？
 
 ### Refs
 
@@ -566,15 +572,15 @@ static inline void fastlock_release(fastlock_t *lock)
 }
 ```
 
-pthread mutex 使用 futex 实现，无竞争时拿锁操作可以完全在用户态实现，否则需要陷入内核。`__sync_add/sub_and_fetch` 是 GCC 内建的 atomic add/sub 函数。如果只有一个线程进程该临界区，则整个过程就是一个原子操作，否则使用 semaphore 进行线程间同步。
+pthread mutex 使用 futex 实现，无竞争时拿锁操作可以完全在用户态实现，否则需要陷入内核。`__sync_add/sub_and_fetch` 是 GCC 内建的 atomic add/sub 函数。如果只有一个线程进程该临界区，则整个过程就是一个原子操作，否则使用 semaphore 进行线程间同步。使用 netperf 测试 rsocket Tput 过程，不存在多线程竞争，但为什么 fastlock_release 开销大于 fastlock_acquire，现在还不明白？
 
 ![](assets/rsocket_main_overhead_64KB.png)
 
-msg_size 为 64 KB 时，主要开销为数据拷贝、锁开销和 gettimeofday 开销，其中数据拷贝仍然是用户缓冲到内部缓冲的拷贝，而 fastlock 主要发生在 rs_get_comp 中 cq_lock，最后 gettimeofday 主要用于统计 polling 的时间。
+msg_size 为 64 KB 时，主要开销为数据拷贝、锁开销和 gettimeofday 开销，其中数据拷贝仍然是用户缓冲到内部缓冲的拷贝，而 fastlock 主要发生在 rs_get_comp 中 cq_lock，最后 gettimeofday 主要用于统计 polling 的时间。因为 send/recv 共享一个 CQ，所以会再访问 CQ 时有锁竞争开销。
 
 ![](assets/rsocket_main_overhead_1MB.png)
 
-msg_size 为 1 MB 时，主要开销为数据拷贝、锁开销、gettimeofday 和 delivery of cq events between userspace and kernel 开销。msg_size 增大时，cq event 的开销为什么会增大？
+msg_size 为 1 MB 时，主要开销为数据拷贝、锁开销、gettimeofday 和 delivery of cq events between userspace and kernel 开销。msg_size 增大时，cq event 的开销为什么会增大？send/recv 都会调用 rs_process_cq 来处理 CQ completion 事件，包括 RDMA write、credits/rbuf 更新开销。因为 rsocket 内部某时刻只回复 64 KB 接受缓冲区，若写满则需要等待下一个接受缓冲区，否则阻塞在 rs_get_cq_event，所以当待发送的数据超过 64 KB 时，credits/rbuf 更新带来的 CQ event 处理开销很大，会带来很多的上下文切换开销。
 
 Refs:
 
